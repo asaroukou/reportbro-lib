@@ -400,8 +400,8 @@ class FPDFRB(fpdf.FPDF):
         fpdf.FPDF.__init__(self, orientation=orientation, unit='pt', format=dimension)
         self.x = 0
         self.y = 0
-        self.set_doc_option('core_fonts_encoding', 'windows-1252')
-        self.set_doc_option('encode_error_handling', encode_error_handling)
+        #self.set_doc_option('core_fonts_encoding', 'windows-1252')
+        #self.set_doc_option('encode_error_handling', encode_error_handling)
         self.loaded_images = dict()
         self.available_fonts = dict(
             courier=dict(standard_font=True),
